@@ -4,6 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Como Entender sua TFFR - Taxa de Fiscalização do Funcionamento Regular</title>
+    
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="imagem_icon-removebg-preview.png">
+    
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pv-blue-900': '#1e3a5f',
+                        'pv-blue-700': '#26476f',
+                        'pv-yellow-500': '#f2c94c',
+                        'pv-green-600': '#70b643',
+                    }
+                }
+            }
+        }
+    </script>
     <style>
         * {
             margin: 0;
@@ -12,9 +40,7 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
         }
 
@@ -379,11 +405,80 @@
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>🏢 Como Entender sua TFFR</h1>
-            <p>Desvendando de forma simples como é calculada a Taxa de Fiscalização do Funcionamento Regular</p>
+<body class="bg-[#f5f5f5]">
+    <!-- Header SEMEC -->
+    <header class="border-b border-slate-200 bg-white">
+        <div class="mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 py-4 lg:grid lg:grid-cols-[220px_minmax(0,1fr)_300px] lg:items-center lg:gap-8">
+            <!-- Logo -->
+            <div class="order-1 flex w-full items-center justify-center self-center lg:order-1 lg:w-auto lg:justify-start lg:self-start lg:pr-4">
+                <a href="/" aria-label="Ir para a página inicial da SEMEC Porto Velho" class="shrink-0">
+                    <img src="logo-semec.svg" alt="Logotipo da Prefeitura de Porto Velho - SEMEC" width="200" height="200" class="object-contain" style="width: 200px; height: 200px;" />
+                </a>
+            </div>
+
+            <!-- Ilustração da Cidade -->
+            <div class="order-3 flex w-full items-center lg:order-2">
+                <div class="flex h-full w-full items-center justify-center overflow-visible">
+                    <div class="relative w-full max-w-[1280px]">
+                        <img src="PortoVelhoPintura.svg" alt="Ilustração linear destacando pontos turísticos de Porto Velho" width="3200" height="1000" class="h-[190px] w-full object-cover" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Redes Sociais e Busca -->
+            <div class="order-2 flex flex-col gap-3 lg:order-3 lg:items-end relative">
+                <div class="flex w-full items-center justify-center gap-3 lg:w-[300px] lg:justify-end">
+                    <div class="flex items-center gap-2">
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/semec.pvh/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da SEMEC" class="inline-flex h-14 w-14 items-center justify-center rounded-md border border-rose-100 bg-rose-50 text-[#E1306C] shadow-sm transition hover:border-rose-200 hover:bg-rose-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E1306C]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <!-- WhatsApp -->
+                        <a href="https://api.whatsapp.com/send?phone=556999425251" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp da SEMEC" class="inline-flex h-14 w-14 items-center justify-center rounded-md border border-emerald-100 bg-emerald-50 text-emerald-700 shadow-sm transition hover:border-emerald-200 hover:bg-emerald-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- Botão de busca -->
+                    <button id="search-toggle" aria-label="Abrir busca" class="inline-flex h-14 w-14 items-center justify-center rounded-md border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--pv-blue-900)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Formulário de busca retrátil -->
+                <form id="site-search-form" class="hidden absolute top-[12px] left-1/2 -translate-x-1/2 z-50 w-[90vw] max-w-[500px] lg:w-[500px]" aria-label="Barra de busca do portal">
+                    <div class="flex w-full items-center rounded-md border border-slate-200 bg-white shadow-lg focus-within:border-[color:var(--pv-blue-900)] focus-within:ring-2 focus-within:ring-[color:var(--pv-blue-900)]/10">
+                        <label for="site-search" class="sr-only">O que você procura?</label>
+                        <span class="pl-3 text-slate-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </span>
+                        <input id="site-search" name="search" type="search" minlength="3" placeholder="O que você procura?" class="w-full border-0 bg-transparent px-3 py-2 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none" />
+                        <button type="submit" class="rounded-r-md bg-[color:var(--pv-yellow-500)] px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-yellow-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-400">Buscar</button>
+                    </div>
+                    <p id="search-feedback" class="mt-2 text-xs font-medium text-[color:var(--pv-blue-900)] hidden"></p>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div aria-hidden="true" class="h-5 w-full border-b-4 border-[#FFDD00] bg-[#70B643]"></div>
+
+    <!-- Container Principal com data-search-root -->
+    <div class="container mx-auto px-4 py-8 max-w-4xl" data-search-root>
+        <!-- Título principal -->
+        <div class="bg-white rounded-lg shadow-lg p-8 mb-8 border border-gray-200">
+            <h1 class="text-3xl md:text-4xl font-bold text-[color:var(--pv-blue-900)] mb-4">🏢 Como Entender sua TFFR</h1>
+            <p class="text-lg text-gray-700">Desvendando de forma simples como é calculada a Taxa de Fiscalização do Funcionamento Regular</p>
         </div>
 
         <div class="step-indicator">
@@ -766,6 +861,222 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer SEMEC -->
+    <footer class="mt-10 border-t-4 border-[#FFDD00] bg-[#70B643]">
+        <div class="mx-auto w-full max-w-5xl px-4 py-6 sm:py-8 md:py-10">
+            <!-- Header do Footer -->
+            <div class="mb-6 flex flex-col items-center gap-4 sm:mb-8 sm:flex-row sm:justify-between sm:gap-6">
+                <!-- Logo -->
+                <div class="flex items-center gap-3 sm:gap-4">
+                    <img src="Logo_Semec_Borda_Branca.png" alt="Logo oficial da SEMEC Porto Velho" width="100" height="100" class="h-auto w-[80px] drop-shadow-md sm:w-[90px] md:w-[100px]" />
+                </div>
+
+                <!-- Texto da Secretaria -->
+                <div class="text-center sm:text-right">
+                    <p class="text-[0.65rem] font-medium uppercase tracking-[0.2em] text-white/90 sm:text-xs sm:tracking-[0.25em]">
+                        Secretaria Municipal de Economia
+                    </p>
+                    <p class="text-[0.6rem] font-light uppercase tracking-[0.15em] text-white/70 sm:text-[0.7rem] sm:tracking-[0.2em]">
+                        Porto Velho — Rondônia
+                    </p>
+                </div>
+            </div>
+
+            <!-- Cards Grid - Responsivo -->
+            <div class="grid grid-cols-1 gap-3 sm:gap-4 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Card 1: Endereço -->
+                <article class="flex flex-col rounded-xl border border-white/40 bg-white/95 p-4 text-[color:var(--pv-blue-900)] shadow-lg shadow-black/10 sm:p-5">
+                    <div class="flex items-center gap-2.5 border-b border-gray-100 pb-3 sm:gap-3 sm:pb-4">
+                        <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[color:var(--pv-blue-900)] text-white shadow-md sm:h-11 sm:w-11 sm:rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="sm:hidden">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="hidden sm:block">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </span>
+                        <div>
+                            <p class="text-[0.6rem] font-semibold uppercase tracking-[0.12em] text-[color:var(--pv-blue-700)] sm:text-[0.65rem] sm:tracking-[0.15em]">
+                                Endereço
+                            </p>
+                            <h3 class="text-sm font-bold leading-tight text-[color:var(--pv-blue-900)] sm:text-base">
+                                Sede SEMEC
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="mt-3 flex-1 space-y-3 sm:mt-4 sm:space-y-4">
+                        <address class="not-italic text-[0.8rem] leading-relaxed text-[color:var(--pv-blue-900)]/80 sm:text-sm">
+                            <span class="font-medium text-[color:var(--pv-blue-900)]">
+                                Av. Sete de Setembro, 744
+                            </span>
+                            <br />
+                            Bairro Centro — Porto Velho, RO
+                        </address>
+                        <div class="flex items-center gap-2 rounded-lg bg-[color:var(--pv-blue-900)]/5 px-2.5 py-2 sm:px-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="shrink-0 text-[color:var(--pv-blue-900)] sm:hidden">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="hidden shrink-0 text-[color:var(--pv-blue-900)] sm:block">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span class="text-[0.7rem] font-semibold text-[color:var(--pv-blue-900)] sm:text-xs">
+                                Atendimento: 08h às 14h
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2: Contatos -->
+                <article class="flex flex-col rounded-xl border border-white/40 bg-white/95 p-4 text-[color:var(--pv-blue-900)] shadow-lg shadow-black/10 sm:p-5">
+                    <div class="flex items-center gap-2.5 border-b border-gray-100 pb-3 sm:gap-3 sm:pb-4">
+                        <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[color:var(--pv-blue-900)] text-white shadow-md sm:h-11 sm:w-11 sm:rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="sm:hidden">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="hidden sm:block">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </span>
+                        <div>
+                            <p class="text-[0.6rem] font-semibold uppercase tracking-[0.12em] text-[color:var(--pv-blue-700)] sm:text-[0.65rem] sm:tracking-[0.15em]">
+                                Contatos
+                            </p>
+                            <h3 class="text-sm font-bold leading-tight text-[color:var(--pv-blue-900)] sm:text-base">
+                                Fale Conosco
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="mt-3 flex-1 space-y-2.5 sm:mt-4 sm:space-y-3">
+                        <div class="flex items-start gap-2 sm:gap-3">
+                            <span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded bg-[color:var(--pv-blue-900)]/10 text-[color:var(--pv-blue-900)] sm:h-6 sm:w-6 sm:rounded-md">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="sm:hidden">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="hidden sm:block">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </span>
+                            <div class="min-w-0 flex-1">
+                                <p class="text-[0.55rem] font-semibold uppercase tracking-wider text-[color:var(--pv-blue-700)] sm:text-[0.6rem]">
+                                    Gabinete
+                                </p>
+                                <p class="text-[0.75rem] font-medium text-[color:var(--pv-blue-900)] sm:text-sm">
+                                    (69) 3901-6281
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2 sm:gap-3">
+                            <span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded bg-[color:var(--pv-blue-900)]/10 text-[color:var(--pv-blue-900)] sm:h-6 sm:w-6 sm:rounded-md">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="sm:hidden">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="hidden sm:block">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </span>
+                            <div class="min-w-0 flex-1">
+                                <p class="text-[0.55rem] font-semibold uppercase tracking-wider text-[color:var(--pv-blue-700)] sm:text-[0.6rem]">
+                                    E-mail institucional
+                                </p>
+                                <a href="mailto:gab.semec@portovelho.ro.gov.br" class="block break-all text-[0.75rem] font-medium text-[color:var(--pv-blue-900)] underline-offset-2 hover:underline sm:text-sm sm:break-normal sm:truncate" title="gab.semec@portovelho.ro.gov.br">
+                                    gab.semec@portovelho.ro.gov.br
+                                </a>
+                            </div>
+                        </div>
+                        <!-- WhatsApp -->
+                        <a href="https://api.whatsapp.com/send?phone=556999425251" target="_blank" rel="noopener noreferrer" class="group !mt-3 flex items-center gap-2.5 rounded-lg border border-[#70B643] bg-white p-2.5 transition hover:bg-[#70B643]/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#70B643] sm:!mt-4 sm:gap-3 sm:p-3">
+                            <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-2 border-[#70B643] bg-white text-[#70B643] shadow-sm transition group-hover:scale-105 sm:h-10 sm:w-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="sm:hidden">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="hidden sm:block">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                                </svg>
+                            </span>
+                            <div class="min-w-0 flex-1">
+                                <p class="text-[0.55rem] font-semibold uppercase tracking-wider text-[color:var(--pv-blue-700)] sm:text-[0.6rem]">
+                                    WhatsApp
+                                </p>
+                                <p class="text-[0.7rem] font-medium text-[color:var(--pv-blue-900)] sm:text-xs">
+                                    (69) 9 9942-5251
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 3: Redes Sociais -->
+                <article class="flex flex-col rounded-xl border border-white/40 bg-white/95 p-4 text-[color:var(--pv-blue-900)] shadow-lg shadow-black/10 sm:p-5 md:col-span-2 lg:col-span-1">
+                    <div class="flex items-center gap-2.5 border-b border-gray-100 pb-3 sm:gap-3 sm:pb-4">
+                        <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[color:var(--pv-blue-900)] text-white shadow-md sm:h-11 sm:w-11 sm:rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="sm:hidden">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="hidden sm:block">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </span>
+                        <div>
+                            <p class="text-[0.6rem] font-semibold uppercase tracking-[0.12em] text-[color:var(--pv-blue-700)] sm:text-[0.65rem] sm:tracking-[0.15em]">
+                                Redes Sociais
+                            </p>
+                            <h3 class="text-sm font-bold leading-tight text-[color:var(--pv-blue-900)] sm:text-base">
+                                Siga a SEMEC
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="mt-3 flex-1 space-y-3 sm:mt-4 sm:space-y-4">
+                        <p class="text-[0.8rem] leading-relaxed text-[color:var(--pv-blue-900)]/80 sm:text-sm">
+                            Acompanhe nossos canais oficiais e fique por dentro das novidades sobre a
+                            <strong class="text-[color:var(--pv-blue-900)]"> Reforma Tributária do Consumo</strong>.
+                        </p>
+                        <div class="flex flex-wrap gap-2 sm:gap-3">
+                            <a href="https://www.instagram.com/semec.pvh/" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-2 rounded-lg border border-[#F7A1C4] bg-[#FDE9F1] px-3 py-2 shadow-sm transition hover:bg-[#F9C5DA] hover:shadow-md sm:px-4 sm:py-2.5">
+                                <span class="flex h-7 w-7 items-center justify-center rounded bg-gradient-to-br from-[#f58529] via-[#dd2a7b] to-[#8134af] p-[1px] transition group-hover:scale-110 sm:h-8 sm:w-8 sm:rounded-md">
+                                    <span class="flex h-full w-full items-center justify-center rounded bg-white text-[#C13584] sm:rounded-md">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="sm:hidden">
+                                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="hidden sm:block">
+                                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="text-[0.8rem] font-semibold text-[color:var(--pv-blue-900)] sm:text-sm">
+                                    @semec.pvh
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Copyright -->
+            <div class="mt-6 border-t border-white/20 pt-4 text-center sm:mt-8">
+                <p class="text-[0.6rem] text-white/60 sm:text-[0.65rem]">
+                    © <span id="current-year">2025</span> Prefeitura Municipal de Porto Velho • Todos os direitos reservados
+                </p>
+            </div>
+        </div>
+
+        <!-- Banner decorativo -->
+        <div aria-hidden="true" class="h-7 w-full bg-repeat-x sm:h-9" style="background-image: url('footer-banner.png'); background-size: 328px 48px; background-position: left center;"></div>
+    </footer>
 
     <script>
         let currentStep = 1;
@@ -1421,6 +1732,8 @@
             updateStepIndicator();
         });
     </script>
+    <!-- Script de busca -->
+    <script src="script.js"></script>
 </body>
 </html>
 
